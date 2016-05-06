@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<directui version="1.0">
+  <dsplugin>
+    <plugin type="duwindow"    dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="button"      dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="layout"      dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="checkbox"    dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="hwndobj"     dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="edit"        dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="combobox"    dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="scrollbar"   dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="listbox"     dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="menubar"     dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="tabbutton"   dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="static"      dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="radio"       dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="grouppanel"  dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="progress"    dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="listboxex"   dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="impanelnode" dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="slider"      dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="splitter"    dll="dulib.dll" proc="duCreateObject"/>
+  </dsplugin>
+  <theme name="Sample">
+    <dsfont>
+      <font name="default"           height="45" weight="600" italic="false" underline="false" strikeout="false" fontface="Arial"/>
+      <font name="Arial18"           height="20" weight="800" italic="false" underline="false" strikeout="false" fontface="Arial"/>
+      <font name="default_underline" height="16" weight="500" italic="false" underline="false" strikeout="false" fontface="Arial"/>
+      <font name="default_bold"      height="32" weight="570" italic="false" underline="false" strikeout="false" fontface="Arial"/>
+    </dsfont>
+
+    <dsimage>
+      <image name="pic_playlist_item" value="playlist_item.png" />
+      <image name="minimize.png"     value="minimize.png"/>
+      <image name="max_png"          value="max.png"/>
+      <image name="exit.png"         value="exit.png"/>
+      <image name="back.png"         value="back.png"/>
+
+      <image name="课程.png" value="课程.png"/>
+      <image name="动画.png" value="动画.png"/>
+      <image name="旋转.png" value="旋转.png"/>
+      <image name="纬度.png" value="纬度.png"/>
+      <image name="经度.png" value="经度.png"/>
+      <image name="channel_animation_focused.png"   value="channel_animation_focused.png"/>
+      <image name="channel_chapter_focused.png"     value="channel_chapter_focused.png"/>
+      <image name="channel_latitude_focused.png"    value="channel_latitude_focused.png"/>
+      <image name="channel_longitude_focused.png"   value="channel_longitude_focused.png"/>
+      <image name="channel_rotate_focused.png"      value="channel_rotate_focused.png"/>
+
+      <image name="PicBackgroud_1024"              value="backgroud_1024.jpg"/>
+      <image name="PicBackgroud_chapter_1024"      value="backgroud_chapter_1024.jpg"/>
+      <image name="PicBackgroud_lant_1024"         value="backgroud_lant_1024.jpg"/>
+      <image name="PicBackgroud_lant_1024_1"       value="backgroud_lant_1024_1.jpg"/>
+      <image name="PicBackgroud_long_1024"         value="backgroud_long_1024.jpg"/>
+      <image name="backbar"                         value="backgroud_1024.jpg"/>
+      <image name="backbar_title"                   value="backbar_title.jpg"/>
+
+      <image name="stop.png"                    value="stop.png"/>
+      <image name="rotateClockwise.png"         value="rotateClockwise.png"/>
+      <image name="rotateAnticlockwise.png"     value="rotateAnticlockwise.png"/>
+      <image name="rotate_2.png"                value="rotate_2.png"/>
+      <image name="rotate.png"                  value="rotate.png"/>
+      <image name="reset_big.png"               value="reset_big.png"/>
+      <image name="reset.png"                   value="reset.png"/>
+      <image name="preFrame.png"                value="preFrame.png"/>
+      <image name="play.png"                    value="play.png"/>
+      <image name="pause_small.png"             value="pause_small.png"/>
+      <image name="pause.png"                   value="pause.png"/>
+      <image name="nextFrame.png"               value="nextFrame.png"/>
+      <image name="increase.png"                value="increase.png"/>
+      <image name="end.png"                     value="end.png"/>
+      <image name="down.png"                    value="down.png"/>
+      <image name="decrease.png"                value="decrease.png"/>
+      <image name="cycleButterfly.png"          value="cycleButterfly.png"/>
+      <image name="cycle.png"                   value="cycle.png"/>
+      <image name="begin.png"                   value="begin.png"/>
+      <image name="accelerate_old.png"          value="accelerate_old.png"/>
+      <image name="up.png"                      value="up.png"/>
+      <image name="toView.png"                  value="toView.png"/>
+      <image name="横向滑块.png"                value="横向滑块.png"/>
+      <image name="竖直滑块.png"                value="竖直滑块.png"/>
+      <image name="scrollbar_office2007_down"		value="scrollbar_office2007_down.png"/>
+      <image name="scrollbar_office2007_up"		value="scrollbar_office2007_up.png"/>
+      <image name="scrollbar_office2007_vert_back"	value="scrollbar_office2007_vert_back.png"/>
+      <image name="scrollbar_office2007_vert_thumb"	value="scrollbar_office2007_vert_thumb.png"/>
+      <image name="set.png"                           value="set.png"/>
+      <image name="pic_scrollbar_bar" value="scrollbar_bar.bmp" />
+      <image name="pic_scrollbar_button" value="scrollbar_button.bmp" />
+      <image name="pic_scrollbar_thumb" value="scrollbar_thumb.bmp" />
+      
+      <image name="pic_xiaoxue"                      value="xiaoxue.png"/>
+      <image name="pic_xiaoxue_h"                    value="xiaoxue_h.png"/>
+      <image name="pic_chuzhong"                     value="chuzhong.png"/>
+      <image name="pic_chuzhong_h"                   value="chuzhong_h.png"/>
+      <image name="pic_gaozhong"                     value="gaozhong.png"/>
+      <image name="pic_gaozhong_h"                   value="gaozhong_h.png"/>
+      <image name="pic_qiongmu"                      value="qiongmu.png"/>
+      <image name="pic_qiongmu_h"                    value="qiongmu_h.png"/>
+    </dsimage>
+
+    <dscursor>
+      <cursor name="hand_cur" value="hand.cur"/>
+    </dscursor>
+
+    <dsrgn>
+      <rgn name="RgnRoundRect" type="roundrect" roundx="9" roundy="9"/>
+    </dsrgn>
+
+    <dsstyle>
+      <!-- duWindow -->
+      <style name="windows_back">
+        <image state="all" picfile="backbar_title"  paintmode="stretch"/>
+      </style>
+      
+      <!-- system buttons -->
+      <style name="sysMin">
+        <image state="normal" picfile="minimize.png"  paintmode="stretch"/>
+        <image state="over"   picfile="minimize.png"  paintmode="stretch"/>
+        <image state="press"  picfile="minimize.png"  paintmode="stretch"/>
+        <image state="focus"  picfile="minimize.png"  paintmode="stretch"/>
+      </style>
+
+      <style name="sysClose">
+        <image state="normal" picfile="exit.png"  paintmode="stretch"/>
+        <image state="over"   picfile="exit.png"  paintmode="stretch"/>
+        <image state="press"  picfile="exit.png"  paintmode="stretch"/>
+        <image state="focus"  picfile="exit.png"  paintmode="stretch"/>
+      </style>
+      <style name="sysSet">
+        <image state="all"   picfile="set.png"    paintmode="stretch"/>
+      </style>
+
+      <style name="sysBack">
+        <image state="all"   picfile="back.png"  paintmode="stretch"/>
+      </style>
+      <style name="sysBar">
+        <image state="all"   picfile="backbar"  selectleft="0" selectwidth="1024" selecttop="0" selectheight="30" paintmode="stretch"/>
+      </style>
+      <!-- button styles -->
+      <style name="button_up">
+        <image state="normal" picfile="up.png"  paintmode="stretch"/>
+        <image state="over"   picfile="up.png"  paintmode="stretch"/>
+        <image state="press"  picfile="up.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="disable" picfile="up.png" paintmode="stretch"/>
+        <image state="focus" picfile="up.png"   paintmode="stretch"/>
+        <image state="checkedall" picfile="up.png" paintmode="stretch"/>
+      </style>
+
+      <style name="button_down">
+        <image state="normal" picfile="down.png"   paintmode="stretch"/>
+        <image state="over"   picfile="down.png"   paintmode="stretch"/>
+        <image state="press"  picfile="down.png"   paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="down.png"   paintmode="stretch"/>
+        <image state="checkedall" picfile="down.png"   paintmode="stretch"/>
+      </style>
+
+      <style name="button_decrease">
+        <image state="normal" picfile="decrease.png"  paintmode="stretch"/>
+        <image state="over"   picfile="decrease.png"  paintmode="stretch"/>
+        <image state="press"  picfile="decrease.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="decrease.png"   paintmode="stretch"/>
+        <image state="checkedall" picfile="decrease.png" paintmode="stretch"/>
+      </style>
+
+      <style name="button_increase">
+        <image state="normal" picfile="increase.png"  paintmode="stretch"/>
+        <image state="over"   picfile="increase.png"  paintmode="stretch"/>
+        <image state="press"  picfile="increase.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="increase.png"   paintmode="stretch"/>
+        <image state="checkedall" picfile="increase.png"  paintmode="stretch"/>
+      </style>
+      <style name="button_cycle">
+        <image state="normal" picfile="cycle.png"  paintmode="stretch"/>
+        <image state="over"   picfile="cycle.png"  paintmode="stretch"/>
+        <image state="press"  picfile="cycle.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="cycle.png"   paintmode="stretch"/>
+        <image state="checkedall" picfile="cycle.png" paintmode="stretch"/>
+      </style>
+      
+      <style name="button_cycleButterfly">
+        <image state="normal" picfile="cycleButterfly.png"  paintmode="stretch"/>
+        <image state="over"   picfile="cycleButterfly.png"  paintmode="stretch"/>
+        <image state="press"  picfile="cycleButterfly.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="cycleButterfly.png"   paintmode="stretch"/>
+        <image state="checkedall" picfile="cycleButterfly.png" paintmode="stretch"/>
+      </style>
+      <style name="button_preFrame">
+        <image state="normal" picfile="preFrame.png"  paintmode="stretch"/>
+        <image state="over"   picfile="preFrame.png"  paintmode="stretch"/>
+        <image state="press"  picfile="preFrame.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="preFrame.png"   paintmode="stretch"/>
+        <image state="checkedall" picfile="preFrame.png" paintmode="stretch"/>
+      </style>
+      <style name="button_nextFrame">
+        <image state="normal" picfile="nextFrame.png"  paintmode="stretch"/>
+        <image state="over"   picfile="nextFrame.png"  paintmode="stretch"/>
+        <image state="press"  picfile="nextFrame.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="nextFrame.png"   paintmode="stretch"/>
+        <image state="checkedall" picfile="nextFrame.png" paintmode="stretch"/>
+      </style>
+      <style name="button_begin">
+        <image state="normal" picfile="begin.png"  paintmode="stretch"/>
+        <image state="over"   picfile="begin.png"  paintmode="stretch"/>
+        <image state="press"  picfile="begin.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="begin.png"   paintmode="stretch"/>
+        <image state="checkedall" picfile="begin.png" paintmode="stretch"/>
+      </style>
+      <style name="button_pause">
+        <image state="normal" picfile="pause_small.png"  paintmode="stretch"/>
+        <image state="over"   picfile="pause_small.png"  paintmode="stretch"/>
+        <image state="press"  picfile="pause_small.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="pause_small.png"   paintmode="stretch"/>
+        <image state="checkedall" picfile="pause_small.png" paintmode="stretch"/>
+      </style>
+      <style name="button_play">
+        <image state="normal" picfile="play.png"  paintmode="stretch"/>
+        <image state="over"   picfile="play.png"  paintmode="stretch"/>
+        <image state="press"  picfile="play.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="play.png"   paintmode="stretch"/>
+        <image state="checkedall" picfile="play.png" paintmode="stretch"/>
+      </style>
+      <style name="button_stop">
+        <image state="normal" picfile="stop.png"  paintmode="stretch"/>
+        <image state="over"   picfile="stop.png"  paintmode="stretch"/>
+        <image state="press"  picfile="stop.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="stop.png"   paintmode="stretch"/>
+        <image state="checkedall" picfile="stop.png" paintmode="stretch"/>
+      </style>
+      <style name="button_end">
+        <image state="normal" picfile="end.png"  paintmode="stretch"/>
+        <image state="over"   picfile="end.png"  paintmode="stretch"/>
+        <image state="press"  picfile="end.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="end.png"   paintmode="stretch"/>
+        <image state="checkedall" picfile="end.png" paintmode="stretch"/>
+      </style>
+
+      <style name="button_rotate">
+        <image state="normal" picfile="rotate.png"  paintmode="stretch"/>
+        <image state="over"   picfile="rotate.png"  paintmode="stretch"/>
+        <image state="press"  picfile="rotate.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="rotate.png"   paintmode="stretch"/>
+        <image state="checkedall" picfile="rotate.png" paintmode="stretch"/>
+      </style>
+      <style name="button_rotate_2">
+        <image state="normal" picfile="rotate_2.png"  paintmode="stretch"/>
+        <image state="over"   picfile="rotate_2.png"  paintmode="stretch"/>
+        <image state="press"  picfile="rotate_2.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="rotate_2.png"   paintmode="stretch"/>
+        <image state="checkedall" picfile="rotate_2.png" paintmode="stretch"/>
+      </style>
+      <style name="button_rotateAnticlockwise">
+        <image state="normal" picfile="rotateAnticlockwise.png"  paintmode="stretch"/>
+        <image state="over"   picfile="rotateAnticlockwise.png"  paintmode="stretch"/>
+        <image state="press"  picfile="rotateAnticlockwise.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="rotateAnticlockwise.png"   paintmode="stretch"/>
+        <image state="checkedall" picfile="rotateAnticlockwise.png" paintmode="stretch"/>
+      </style>
+      <style name="button_rotateClockwise">
+        <image state="normal" picfile="rotateClockwise.png"  paintmode="stretch"/>
+        <image state="over"   picfile="rotateClockwise.png"  paintmode="stretch"/>
+        <image state="press"  picfile="rotateClockwise.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="rotateClockwise.png"   paintmode="stretch"/>
+        <image state="checkedall" picfile="rotateClockwise.png" paintmode="stretch"/>
+      </style>
+      <style name="button_reset">
+        <image state="normal" picfile="reset_big.png"  paintmode="stretch"/>
+        <image state="over"   picfile="reset_big.png"  paintmode="stretch"/>
+        <image state="press"  picfile="reset_big.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="reset_big.png"   paintmode="stretch"/>
+        <image state="checkedall" picfile="reset_big.png" paintmode="stretch"/>
+      </style>
+
+      <style name="tabbutton_Chapter_style">
+        <image state="normal" picfile="课程.png"   paintmode="stretch"/>
+        <image state="over"   picfile="课程.png"   paintmode="stretch"/>
+        <image state="press"  picfile="channel_chapter_focused.png"   paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="channel_chapter_focused.png"   paintmode="stretch"/>
+        <image state="checkedall"      picfile="channel_chapter_focused.png"   paintmode="stretch"/>
+      </style>
+
+      <style name="tabbutton_donghua_style">
+        <image state="normal" picfile="动画.png"  paintmode="stretch"/>
+        <image state="over"   picfile="动画.png"  paintmode="stretch"/>
+        <image state="press"  picfile="channel_animation_focused.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="channel_animation_focused.png"  paintmode="stretch"/>
+        <image state="checkedall"      picfile="channel_animation_focused.png"    paintmode="stretch"/>
+      </style>
+
+      <style name="tabbutton_xuanzhuan_style">
+        <image state="normal" picfile="旋转.png"  paintmode="stretch"/>
+        <image state="over"   picfile="旋转.png"  paintmode="stretch"/>
+        <image state="press"  picfile="channel_rotate_focused.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="channel_rotate_focused.png"  paintmode="stretch"/>
+        <image state="checkedall"      picfile="channel_rotate_focused.png"    paintmode="stretch"/>
+      </style>
+
+      <style name="tabbutton_weidu_style">
+        <image state="normal" picfile="纬度.png"  paintmode="stretch"/>
+        <image state="over"   picfile="纬度.png"  paintmode="stretch"/>
+        <image state="press"  picfile="channel_latitude_focused.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="channel_latitude_focused.png"  paintmode="stretch"/>
+        <image state="checkedall"      picfile="channel_latitude_focused.png"    paintmode="stretch"/>
+      </style>
+
+      <style name="tabbutton_jingdu_style">
+        <image state="normal" picfile="经度.png"  paintmode="stretch"/>
+        <image state="over"   picfile="经度.png"  paintmode="stretch"/>
+        <image state="press"  picfile="channel_longitude_focused.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="channel_longitude_focused.png"  paintmode="stretch"/>
+        <image state="checkedall"      picfile="channel_longitude_focused.png"    paintmode="stretch"/>
+      </style>
+      
+      <!--background_picture-->
+      <style name="Chapter_background">
+        <image state="all" picfile="PicBackgroud_chapter_1024"   selectleft="0"  selectwidth="1024" selecttop="30" selectheight="738" paintmode="stretch"/>
+      </style>
+
+      <style name="donghua_background">
+        <image state="all" picfile="PicBackgroud_1024"   selectleft="0"  selectwidth="1024" selecttop="30" selectheight="738" paintmode="stretch"/>
+      </style>
+
+      <style name="xuanzhuan_background">
+        <image state="all" picfile="PicBackgroud_lant_1024"   selectleft="0"  selectwidth="1024" selecttop="30" selectheight="738" paintmode="stretch"/>
+      </style>
+
+      <style name="weidu_background">
+        <image state="all" picfile="PicBackgroud_lant_1024_1"   selectleft="0"  selectwidth="1024" selecttop="30" selectheight="738" paintmode="stretch"/>
+      </style>
+
+      <style name="jingdu_background">
+        <image state="all" picfile="PicBackgroud_long_1024"  selectleft="0"  selectwidth="1024" selecttop="30" selectheight="738" paintmode="stretch"/>
+      </style>
+
+      <style name="listbox_item">
+        <text state="normal"   left="6"  textcolor="RGB(255,255,255)" bsingleline="true" font="default_bold" halign="left" valign="center"/>
+        <text state="over"     left="6"  textcolor="RGB(255,0,255)" bsingleline="true" font="default_bold" halign="left" valign="center"/>
+        <text state="press"    left="6"  textcolor="RGB(255,255,0)" bsingleline="true" font="default_bold" halign="left" valign="center"/>
+        <text state="focus"    left="6"  textcolor="RGB(255,255,0)" bsingleline="true" font="default_bold" halign="left" valign="center"/>
+        <text state="checkedall"   left="6"  textcolor="RGB(255,255,0)" bsingleline="true" font="default_bold" halign="left" valign="center"/>
+      </style>
+      <style name="listbox_back">
+        <rect state="all"  bfill="false" bborder="true" bordertype="sloid" borderwidth="1" bodercolor="RGB(0,0,0)"/>
+      </style>
+      <style name="scroll_back_playitems">
+        <image state="all" picfile="pic_scrollbar_bar" paintmode="stretch" />
+      </style>
+      <style name="scroll_up_playitems">
+        <image state="normal" picfile="pic_scrollbar_button" selecttop="0" selectleft="0" selectwidth="21" selectheight="21" paintmode="stretch" />
+        <image state="over" picfile="pic_scrollbar_button" selecttop="0" selectleft="21" selectwidth="21" selectheight="21" paintmode="stretch" />
+        <image state="press" picfile="pic_scrollbar_button" selecttop="0" selectleft="42" selectwidth="21" selectheight="21" paintmode="stretch" />
+      </style>
+      <style name="scroll_down_playitems">
+        <image state="normal" picfile="pic_scrollbar_button" selecttop="21" selectleft="0" selectwidth="21" selectheight="21" paintmode="stretch" />
+        <image state="over" picfile="pic_scrollbar_button" selecttop="21" selectleft="21" selectwidth="21" selectheight="21" paintmode="stretch" />
+        <image state="press" picfile="pic_scrollbar_button" selecttop="21" selectleft="42" selectwidth="21" selectheight="21" paintmode="stretch" />
+      </style>
+      <style name="scroll_thumb_playitems">
+        <image state="normal" picfile="pic_scrollbar_thumb" selecttop="0" selectleft="0" selectwidth="21" selectheight="97" paintmode="stretch" />
+        <image state="over" picfile="pic_scrollbar_thumb" selecttop="0" selectleft="21" selectwidth="21" selectheight="97" paintmode="stretch" />
+        <image state="press" picfile="pic_scrollbar_thumb" selecttop="0" selectleft="42" selectwidth="21" selectheight="97" paintmode="stretch" />
+      </style>
+
+      <style name="slider_v">
+        <image state="all" picfile="竖直滑块.png"  selectleft="5" selectwidth="20" selecttop="5" selectheight="40"  paintmode="normal"/>
+      </style>
+      <style name="slider_h">
+        <image state="all" picfile="横向滑块.png"   paintmode="stretch"/>
+      </style>
+      <style name="forestyle">
+        <rect state="all" left="0" top="0" height="0" bfill="true" fillcolor="RGB(0,238,0)" bborder="false"/>
+      </style>
+      <style name="slider_thumb_kw_2">
+        <image state="all" picfile="slider_thumb_kw_2.png" width="17" height="8" paintmode="stretch"/>
+      </style>
+      <style name="static_default">
+        <text  state="all" textcolor="RGB(255,255,255)" bsingleline="true" font="default" halign="center" valign="center"/>
+      </style>
+      
+      
+      <style name="btn_xiaoxue_style">
+        <image state="all"    picfile="pic_xiaoxue"  paintmode="normal"/>
+        <image state="checkedall"      picfile="pic_xiaoxue_h"    paintmode="normal"/>
+      </style>      
+      <style name="btn_chuzhong_style">
+        <image state="all"    picfile="pic_chuzhong"  paintmode="normal"/>
+        <image state="checkedall"      picfile="pic_chuzhong_h"    paintmode="normal"/>
+      </style>
+      <style name="btn_gaozhong_style">
+        <image state="all"    picfile="pic_gaozhong"  paintmode="normal"/>
+        <image state="checkedall"      picfile="pic_gaozhong_h"    paintmode="normal"/>
+      </style>
+      <style name="btn_qiongmu_style">
+        <image state="all"    picfile="pic_qiongmu"  paintmode="normal"/>
+        <image state="checkedall"      picfile="pic_qiongmu_h"    paintmode="normal"/>
+      </style>
+    </dsstyle>
+  </theme>
+  <ducontrol>
+    <duwindow name="samples_window" style="windows_back" cursor="" text="羿飞科技" visible="true" zorder="0" left="0" top="0" right="0" bottom="0" horzanchor="2" vertanchor="2" width="1024" height="768" x="0" y="0" captionheight="34" minwidth="1024" minheight="768" maxwidth="1024" maxheight="768" bordersize="0" >
+      <layout name="sysPanel" style="" visible="true" zorder="1" left="-160" top="1" width="160" height="40" horzanchor="0" vertanchor="0" type="1" yspace="25" xspace="10">
+        <button name="sysSet"   visible="true" zorder="2" style="sysSet"   left="120" top="0" width="30" height="30" horzanchor="0" vertanchor="0"/>
+        <button name="sysMin" visible="true" zorder="2" style="sysMin" left="0" top="0" width="30" height="30" horzanchor="0" vertanchor="0"/>
+        <button name="sysBack"  visible="true" zorder="2" style="sysBack"  left="40" top="0" width="30" height="30" horzanchor="0" vertanchor="0"/>
+        <button name="sysClose" visible="true" zorder="2" style="sysClose" left="80" top="0" width="30" height="30" horzanchor="0" vertanchor="0"/>
+      </layout>
+      
+      <layout name="sysBar" style="sysBar"  visible="true"  zorder="1" left="0" top="0" width="1024" height="30" type="1"/>
+      <layout name="top_tab_layout" style="" visible="true" zorder="3" left="135" top="570" width="800" height="128" type="1" xspace="28">
+        <tabbutton name="tab_Chapter"  visible="true" zorder="4" style="tabbutton_Chapter_style"   width="128" height="128"  selected="true"  tabpage="Chapter_background"/>
+        <tabbutton name="tab_donghua" visible="true" zorder="4" style="tabbutton_donghua_style"   width="128" height="128"  selected="false"  tabpage="donghua_background"/>
+        <tabbutton name="tab_xuanzhuan" visible="true" zorder="4" style="tabbutton_xuanzhuan_style" width="128" height="128"  selected="false" tabpage="xuanzhuan_background"/>
+        <tabbutton name="tab_weidu"  visible="true" zorder="4" style="tabbutton_weidu_style"     width="128" height="128"  selected="false" tabpage="weidu_background"/>
+        <tabbutton name="tab_jingdu" visible="true" zorder="4" style="tabbutton_jingdu_style"    width="128" height="128"  selected="false" tabpage="jingdu_background"/>
+      </layout>
+
+      <layout name="Chapter_background" style="Chapter_background" visiable="true" zorder="1" left="0" top="30" width="1024" height="738" horzanchor="2" vertanchor="2">
+        <button name="Chapter_up_btn"      visible="true" width="44"  height="36" zorder="2" style="button_up"   left="486" top="250"/>
+        <button name="Chapter_down_btn"    visible="true" width="44"  height="36" zorder="2" style="button_down" left="486" top="382"/>
+        <button name="Page_up_btn"     visible="true" width="44"  height="36" zorder="2" style="button_up"   left="890" top="250"/>
+        <button name="Page_down_btn"   visible="true" width="44"  height="36" zorder="2" style="button_down" left="890" top="382"/>
+        <listbox name="listbox_Chapter" visible="true" zorder="2" style="listbox_back"  top="165" left="140" right="546"  bottom="228" horzanchor="2" vertanchor="2" itemheight="35"  itemstyle="listbox_item"  bordersize="1" vertscrollbar="scrollbar_playitems1">
+          <scrollbar name="scrollbar_playitems1" visible="true" zorder="2" style="scroll_back_playitems" left="-21" top="1" width="21" bottom="1" vertanchor="2" upstyle="scroll_up_playitems" downstyle="scroll_down_playitems" thumbstyle="scroll_thumb_playitems" vert="true" arrowheight="21" maxpos="100" pos="0" page="20" step="2" />
+        </listbox>
+
+        <listbox name="listbox_Page" visible="true" zorder="2" style="listbox_back"  top="165" left="546" right="140" bottom="228" horzanchor="2" vertanchor="2" itemheight="35"  itemstyle="listbox_item"  bordersize="1" vertscrollbar="scrollbar_playitems2">
+          <scrollbar name="scrollbar_playitems2" visible="true" zorder="2" style="scroll_back_playitems" left="-21" top="1" width="21" bottom="1" vertanchor="2" upstyle="scroll_up_playitems" downstyle="scroll_down_playitems" thumbstyle="scroll_thumb_playitems" vert="true" arrowheight="21" maxpos="100" pos="0" page="20" step="2" />
+        </listbox>
+
+        <layout name="kechengleixing" style="" visible="true" zorder="2" left="0" top="100" width="100" height="500" horzanchor="0" vertanchor="0" type="3" yspace="25" xspace="0">
+          <tabbutton name="btnXiaoxue"   visible="true" zorder="3" style="btn_xiaoxue_style"   left="0" top="0" width="74" height="74" horzanchor="0" vertanchor="0" selected ="true"/>
+          <tabbutton name="btnChuzhong"  visible="true" zorder="3" style="btn_chuzhong_style"  left="0" top="0" width="74" height="74" horzanchor="0" vertanchor="0"/>
+          <tabbutton name="btnGaozhong"  visible="true" zorder="3" style="btn_gaozhong_style"  left="0" top="0" width="74" height="74" horzanchor="0" vertanchor="0"/>
+          <tabbutton name="btnQiongmu"   visible="true" zorder="3" style="btn_qiongmu_style"   left="0" top="0" width="74" height="74" horzanchor="0" vertanchor="0"/>
+        </layout>
+      </layout>
+
+
+      <layout name="donghua_background" style="donghua_background" visiable="true" zorder="1" left="0" top="30" width="1024" height="738" horzanchor="2" vertanchor="2">
+        <button name="decrease_btn"        visible="true" width="84" height="84" zorder="2" style="button_decrease"         left="685" top="120"/>
+        <button name="increase_btn"        visible="true" width="84" height="84" zorder="2" style="button_increase"         left="835" top="120"/>
+        <button name="cycle_btn"           visible="true" width="84" height="84" zorder="2" style="button_cycle"            left="105" top="270"/>
+        <button name="cycleButterfly_btn"  visible="true" width="84" height="84" zorder="2" style="button_cycleButterfly"   left="195" top="270"/>
+        <button name="preFrame_btn"        visible="true" width="84" height="84" zorder="2" style="button_preFrame"         left="745" top="270"/>
+        <button name="nextFrame_btn"       visible="true" width="84" height="84" zorder="2" style="button_nextFrame"        left="835" top="270"/>
+        <button name="begin_btn"           visible="true" width="84" height="84" zorder="2" style="button_begin"            left="260" top="410"/>
+        <button name="pause_btn"           visible="true" width="84" height="84" zorder="2" style="button_pause"            left="350" top="410"/>
+        <button name="play_btn"            visible="true" width="128" height="128" zorder="2" style="button_play"           left="450" top="390"/>
+        <button name="stop_btn"            visible="true" width="84" height="84" zorder="2" style="button_stop"             left="580" top="410"/>
+        <button name="end_up_btn"          visible="true" width="84" height="84" zorder="2" style="button_end"              left="670" top="410"/>
+        <static name="frame_speed"         visible="true" zorder="2" style="static_default" left="760" top="120" width="84" height="84" text="10"/>
+        <slider name="donghua_slider"      visible="true" zorder="2" style="" left="330" top="295" right="328" height="40" horzanchor="2" maxpos="100" pos="10" thumbwidth="20" thumbheight="40"  thumbstyle="slider_v" forestyle="" vert="false"/>
+      </layout>
+
+
+      <layout name="xuanzhuan_background" style="xuanzhuan_background" visiable="true" zorder="1" left="0" top="30" width="1024" height="738" horzanchor="2" vertanchor="2">
+        <button name="rotate_btn"               visible="true" width="84" height="84" zorder="2" style="button_rotate"                left="386" top="160"/>
+        <button name="rotate_2_btn"             visible="true" width="84" height="84" zorder="2" style="button_rotate_2"              left="554" top="160"/>
+        <button name="rotateAnticlockwise_btn"  visible="true" width="84" height="84" zorder="2" style="button_rotateAnticlockwise"   left="728" top="225"/>
+        <button name="rotateClockwise_btn"      visible="true" width="84" height="84" zorder="2" style="button_rotateClockwise"       left="220" top="225"/>
+        <button name="rotate_reset_btn"         visible="true" width="128" height="128" zorder="2" style="button_reset"               left="446" top="410"/>
+        <slider name="rotate_slider"            visible="true" zorder="2" style="" left="865" top="120"   bottom="443" width="50" height="30" vertanchor="2" maxpos="100" pos="10" thumbwidth="48" thumbheight="30" thumbstyle="slider_h" forestyle="" vert="true"/>
+      </layout>
+
+
+      <layout name="weidu_background" style="weidu_background" visiable="true" zorder="1" left="0" top="30" width="1024" height="738" horzanchor="2" vertanchor="2">
+        <button name="weidu_rotate_btn"               visible="true" width="84" height="84" zorder="2" style="button_rotate"                left="470" top="160"/>
+        <button name="weidu_rotateAnticlockwise_btn"  visible="true" width="84" height="84" zorder="2" style="button_rotateAnticlockwise"   left="728" top="225"/>
+        <button name="weidu_rotateClockwise_btn"      visible="true" width="84" height="84" zorder="2" style="button_rotateClockwise"       left="220" top="225"/>
+        <button name="weidu_rotate_reset_btn"         visible="true" width="128" height="128" zorder="2" style="button_reset"               left="446" top="410"/>
+        <slider name="weidu_slider"                   visible="true" zorder="2"  style="" left="865" top="120" bottom="443" width="50" height="12" vertanchor="2" maxpos="100" pos="10" thumbwidth="48" thumbheight="30"  thumbstyle="slider_h" forestyle="" vert="true"/>
+      </layout>
+
+      <layout name="jingdu_background" style="jingdu_background" visiable="true" zorder="1" left="0" top="30" width="1024" height="738" horzanchor="2" vertanchor="2">
+        <button name="jingdu_rotate_btn"               visible="true" width="84" height="84" zorder="2" style="button_rotate"                left="470" top="160"/>
+        <button name="jingdu_rotateAnticlockwise_btn"  visible="true" width="84" height="84" zorder="2" style="button_rotateAnticlockwise"   left="728" top="225"/>
+        <button name="jingdu_rotateClockwise_btn"      visible="true" width="84" height="84" zorder="2" style="button_rotateClockwise"       left="220" top="225"/>
+        <button name="jingdu_rotate_reset_btn"         visible="true" width="128" height="128" zorder="2" style="button_reset"               left="446" top="410"/>
+        <slider name="jingdu_slider"                   visible="true" zorder="2" style="" left="727" top="106" right="118" height="30" horzanchor="2" maxpos="100" pos="10" thumbwidth="30" thumbheight="40"  thumbstyle="slider_v" forestyle="" vert="false"/>
+      </layout>
+      
+      
+    </duwindow>
+  </ducontrol>
+</directui>

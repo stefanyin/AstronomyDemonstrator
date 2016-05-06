@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<directui version="1.0">
+  <dsplugin>
+    <plugin type="duwindow"    dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="button"      dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="layout"      dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="checkbox"    dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="hwndobj"     dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="edit"        dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="combobox"    dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="scrollbar"   dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="listbox"     dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="menubar"     dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="tabbutton"   dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="static"      dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="radio"       dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="grouppanel"  dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="progress"    dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="listboxex"   dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="impanelnode" dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="slider"      dll="dulib.dll" proc="duCreateObject"/>
+    <plugin type="splitter"    dll="dulib.dll" proc="duCreateObject"/>
+  </dsplugin>
+  <theme name="Sample">
+    <dsfont>
+      <font name="default"           height="45" weight="600" italic="false" underline="false" strikeout="false" fontface="Arial"/>
+      <font name="Arial18"           height="20" weight="800" italic="false" underline="false" strikeout="false" fontface="Arial"/>
+      <font name="default_underline" height="16" weight="500" italic="false" underline="false" strikeout="false" fontface="Arial"/>
+      <font name="default_bold"      height="25" weight="500" italic="false" underline="false" strikeout="false" fontface="Arial"/>
+    </dsfont>
+
+    <dsimage>
+      <image name="pic_playlist_item" value="playlist_item.png" />
+      <image name="minimize.png"      value="minimize.png"/>
+      <image name="max_png"           value="max.png"/>
+      <image name="exit.png"          value="exit.png"/>
+      <image name="back.png"          value="back.png"/>
+      <image name="pic_sr"            value="sr.png"/>
+      <image name="logo"              value="logo.png"/>
+      <image name="mode_rect"         value="mode_rect.png"/>
+      <image name="mode_circle"       value="mode_circle.png"/>
+                                       
+
+
+      <image name="PicBackgroud_1024"              value="backgroud_1024.jpg"/>
+      <image name="PicBackgroud_chapter_1024"      value="backgroud_chapter_1024.jpg"/>
+      <image name="backbar"                         value="backgroud_1024.jpg"/>
+      <image name="backbar_title"                   value="backbar_title.jpg"/>
+
+      <image name="stop.png"                    value="stop.png"/>
+
+      <image name="play.png"                    value="play.png"/>
+      <image name="pause.png"                   value="pause.png"/>
+
+
+      <image name="down.png"                    value="down.png"/>
+      <image name="up.png"                      value="up.png"/>
+      <image name="横向滑块.png"                value="横向滑块.png"/>
+      <image name="竖直滑块.png"                value="竖直滑块.png"/>
+      <image name="scrollbar_office2007_down"		value="scrollbar_office2007_down.png"/>
+      <image name="scrollbar_office2007_up"		value="scrollbar_office2007_up.png"/>
+      <image name="scrollbar_office2007_vert_back"	value="scrollbar_office2007_vert_back.png"/>
+      <image name="scrollbar_office2007_vert_thumb"	value="scrollbar_office2007_vert_thumb.png"/>
+      <image name="set.png"                           value="set.png"/>
+      <image name="pic_scrollbar_bar" value="scrollbar_bar.png" />
+      <image name="pic_scrollbar_button" value="scrollbar_button.bmp" />
+      <image name="pic_scrollbar_thumb" value="scrollbar_thumb.png" />
+      
+
+      <image name="listbox_back"                     value="listbox_back.png"/>
+      <image name="progress_bg"                      value="progress_bg.png"/>
+      <image name="progress_fore"                    value="progress_fore.png"/>
+      <image name="item_normal"                      value="item_normal.png"/>
+      <image name="item_selected"                    value="item_selected.png"/>
+      <image name="play_back"                        value="play_back.png"/>
+      <image name="softwarename"                     value="softwarename.png"/>
+      <image name="copyrights"                       value="copyrights.png"/>
+      <image name="play_control"                     value="play_control.png"/>
+      <image name="pathset"                          value="pathset.png"/>
+    </dsimage>
+
+    <dscursor>
+      <cursor name="hand_cur" value="hand.cur"/>
+    </dscursor>
+
+    <dsrgn>
+      <rgn name="RgnRoundRect" type="roundrect" roundx="9" roundy="9"/>
+    </dsrgn>
+
+    <dsstyle>
+      <!-- duWindow -->
+      <style name="windows_back">
+        <image state="all" picfile="backbar_title"  paintmode="stretch"/>
+      </style>
+      
+      <!-- system buttons -->
+      <style name="sysMin">
+        <image state="normal" picfile="minimize.png"  paintmode="stretch"/>
+        <image state="over"   picfile="minimize.png"  paintmode="stretch"/>
+        <image state="press"  picfile="minimize.png"  paintmode="stretch"/>
+        <image state="focus"  picfile="minimize.png"  paintmode="stretch"/>
+      </style>
+
+      <style name="sysClose">
+        <image state="normal" picfile="exit.png"  paintmode="stretch"/>
+        <image state="over"   picfile="exit.png"  paintmode="stretch"/>
+        <image state="press"  picfile="exit.png"  paintmode="stretch"/>
+        <image state="focus"  picfile="exit.png"  paintmode="stretch"/>
+      </style>
+      
+      <style name="sysSet">
+        <image state="all"   picfile="set.png"    paintmode="stretch"/>
+      </style>
+      
+      <style name="sysSRStyle">
+        <image state="normal" picfile="pic_sr"  selectleft="32" selecttop="0" selectwidth="32" selectheight="32" paintmode="stretch"/>
+        <image state="over"   picfile="pic_sr"  selectleft="32" selecttop="0" selectwidth="32" selectheight="32" paintmode="stretch"/>
+        <image state="press"  picfile="pic_sr"  selectleft="32" selecttop="0" selectwidth="32" selectheight="32" paintmode="stretch"/>
+        <image state="focus"  picfile="pic_sr"  selectleft="32" selecttop="0" selectwidth="32" selectheight="32" paintmode="stretch"/>
+        <image state="checked"      picfile="pic_sr" selectleft="0" selecttop="0" selectwidth="32" selectheight="32" paintmode="stretch"/>
+        <image state="checkedover"  picfile="pic_sr" selectleft="0" selecttop="0" selectwidth="32" selectheight="32" paintmode="stretch"/>
+      	<image state="checkedpress" picfile="pic_sr" selectleft="0" selecttop="0" selectwidth="32" selectheight="32" paintmode="stretch"/>
+      	<image state="checkedfocus" picfile="pic_sr" selectleft="0" selecttop="0" selectwidth="32" selectheight="32" paintmode="stretch"/>
+      </style>
+
+      <style name="sysBack">
+        <image state="all"   picfile="back.png"  paintmode="stretch"/>
+      </style>
+      <style name="sysBar">
+        <image state="all"   picfile="backbar"  selectleft="0" selectwidth="1024" selecttop="0" selectheight="30" paintmode="stretch"/>
+      </style>
+      <style name="logo">
+        <image state="all"   picfile="logo"  paintmode="stretch"/>
+      </style>
+      <!-- button styles -->
+      <style name="button_up">
+        <image state="stretch" picfile="up.png"  paintmode="stretch"/>
+        <image state="over"   picfile="up.png"  paintmode="stretch"/>
+        <image state="press"  picfile="up.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="disable" picfile="up.png" paintmode="stretch"/>
+        <image state="focus" picfile="up.png"   paintmode="stretch"/>
+        <image state="checkedall" picfile="up.png" paintmode="stretch"/>
+      </style>
+
+      <style name="button_down">
+        <image state="normal" picfile="down.png"   paintmode="stretch"/>
+        <image state="over"   picfile="down.png"   paintmode="stretch"/>
+        <image state="press"  picfile="down.png"   paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="down.png"   paintmode="stretch"/>
+        <image state="checkedall" picfile="down.png"   paintmode="stretch"/>
+      </style>
+  
+      <style name="button_pause">
+        <image state="normal" picfile="pause.png"  paintmode="stretch"/>
+        <image state="over"   picfile="pause.png"  paintmode="stretch"/>
+        <image state="press"  picfile="pause.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="pause.png"   paintmode="stretch"/>
+        <image state="checkedall" picfile="pause.png" paintmode="stretch"/>
+      </style>
+      <style name="button_play">
+        <image state="normal" picfile="play.png"  paintmode="stretch"/>
+        <image state="over"   picfile="play.png"  paintmode="stretch"/>
+        <image state="press"  picfile="play.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="play.png"   paintmode="stretch"/>
+        <image state="checkedall" picfile="pause.png" paintmode="stretch"/>
+      </style>
+
+       <style name="button_pathset">
+        <image state="normal" picfile="pathset"  paintmode="stretch"/>
+        <image state="over"   picfile="pathset"  paintmode="stretch"/>
+        <image state="press"  picfile="pathset"  paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="pathset"   paintmode="stretch"/>
+        <image state="checkedall" picfile="pathset" paintmode="stretch"/>
+      </style>
+       
+     <style name="checkbox_displaymode">
+        <image state="normal" picfile="mode_rect"   paintmode="stretch"/>
+        <image state="over"   picfile="mode_rect"   paintmode="stretch"/>
+        <image state="press"  picfile="mode_rect"   paintmode="stretch"/>
+        <image state="focus"  picfile="mode_rect"   paintmode="stretch"/>
+        <image state="checked"      picfile="mode_circle"  paintmode="stretch"/>
+        <image state="checkedover"  picfile="mode_circle"  paintmode="stretch"/>
+      	<image state="checkedpress" picfile="mode_circle"  paintmode="stretch"/>
+      	<image state="checkedfocus" picfile="mode_circle"  paintmode="stretch"/>
+      </style>
+      <style name="button_stop">
+        <image state="normal" picfile="stop.png"  paintmode="stretch"/>
+        <image state="over"   picfile="stop.png"  paintmode="stretch"/>
+        <image state="press"  picfile="stop.png"  paintmode="stretch" left="2" top="2"/>
+        <image state="focus"  picfile="stop.png"   paintmode="stretch"/>
+        <image state="checkedall" picfile="stop.png" paintmode="stretch"/>
+      </style>
+      
+      <!--background_picture-->
+      <style name="Chapter_background">
+        <image state="all" picfile="PicBackgroud_chapter_1024"   selectleft="0"  selectwidth="1024" selecttop="30" selectheight="738" paintmode="stretch"/>
+      </style>
+
+      <style name="listbox_item">
+        <text state="normal"   left="50"  textcolor="RGB(255,255,255)" bsingleline="true"  font="default_bold" halign="left" valign="center" />
+        <text state="over"     left="50"  textcolor="RGB(255,0,255)" bsingleline="true"   font="default_bold" halign="left" valign="center" />
+        <text state="press"    left="50"  textcolor="RGB(255,255,0)" bsingleline="true"   font="default_bold" halign="left" valign="center" />
+        <text state="focus"    left="50"  textcolor="RGB(255,255,0)" bsingleline="true"   font="default_bold" halign="left" valign="center" />
+        <text state="checkedall"     left="50"  textcolor="RGB(255,255,0)" bsingleline="true"   font="default_bold" halign="left" valign="center" />
+        <image state="normal"     picfile="item_normal"  paintmode="stretch" />
+        <image state="over"       picfile="item_normal"   paintmode="stretch" />
+        <image state="press"      picfile="item_selected"   paintmode="stretch" />
+        <image state="focus"      picfile="item_selected"   paintmode="stretch" />
+        <image state="checkedall"     picfile="item_selected"  paintmode="stretch"/>
+      </style>
+      <style name="listbox_back">
+        <image state="all" picfile="listbox_back" paintmode="stretch" />
+      </style>
+      <style name="scroll_back_playitems">
+        <image state="all" picfile="pic_scrollbar_bar" paintmode="stretchvert" />
+      </style>
+      <style name="scroll_up_playitems">
+        <image state="normal" picfile="pic_scrollbar_button" selecttop="0" selectleft="0" selectwidth="21" selectheight="21" paintmode="stretch" />
+        <image state="over" picfile="pic_scrollbar_button" selecttop="0" selectleft="21" selectwidth="21" selectheight="21" paintmode="stretch" />
+        <image state="press" picfile="pic_scrollbar_button" selecttop="0" selectleft="42" selectwidth="21" selectheight="21" paintmode="stretch" />
+      </style>
+      <style name="scroll_down_playitems">
+        <image state="normal" picfile="pic_scrollbar_button" selecttop="21" selectleft="0" selectwidth="21" selectheight="21" paintmode="stretch" />
+        <image state="over" picfile="pic_scrollbar_button" selecttop="21" selectleft="21" selectwidth="21" selectheight="21" paintmode="stretch" />
+        <image state="press" picfile="pic_scrollbar_button" selecttop="21" selectleft="42" selectwidth="21" selectheight="21" paintmode="stretch" />
+      </style>
+      <style name="scroll_thumb_playitems">
+        <image state="all" picfile="pic_scrollbar_thumb"  left="3" paintmode="stretchvert"/>
+      </style>
+
+      <style name="slider_v">
+        <image state="all" picfile="竖直滑块.png"    paintmode="stretch"/>
+      </style>
+      <style name="slider_h">
+        <image state="all" picfile="横向滑块.png"   paintmode="stretch"/>
+      </style>
+      <style name="progress_bg">
+        <image state="all" picfile="progress_bg"   paintmode="stretchhorz"/>
+      </style>
+      <style name="progress_fore">
+        <image state="all" picfile="progress_fore"   paintmode="stretchhorz"/>
+      </style>
+      <style name="forestyle">
+        <rect state="all" left="0" top="0" height="0" bfill="true" fillcolor="RGB(0,238,0)" bborder="false"/>
+      </style>
+      <style name="slider_thumb_kw_2">
+        <image state="all" picfile="slider_thumb_kw_2.png" width="17" height="8" paintmode="stretch"/>
+      </style>
+      <style name="static_default">
+        <text  state="all" textcolor="RGB(255,255,255)" bsingleline="true" font="default" halign="center" valign="center"/>
+      </style>
+      <style name="play_back">
+        <image  state="all" picfile="play_back" paintmode="stretch"/>
+      </style>
+      <style name="play_control">
+        <image  state="all" picfile="play_control" paintmode="stretch"/>
+      </style>
+      
+      <style name="softwarename">
+        <image  state="all" picfile="softwarename" paintmode="stretch"/>
+      </style>
+      <style name="copyrights">
+        <image  state="all" picfile="copyrights" paintmode="stretch"/>
+      </style>
+    </dsstyle>
+  </theme>
+  <ducontrol>
+    <duwindow name="samples_window" style="windows_back" cursor="" text="羿飞科技" visible="true" zorder="0" left="0" top="0" right="0" bottom="0" horzanchor="2" vertanchor="2" width="1024" height="768" x="0" y="0" captionheight="34" minwidth="1024" minheight="768" maxwidth="1920" maxheight="1200" bordersize="0" >
+      <layout name="sysPanel" style="" visible="true" zorder="1" left="-200" top="1" width="200" height="40" horzanchor="0" vertanchor="0" type="1" yspace="25" xspace="6">
+        <checkbox name="sysSR"   visible="false" zorder="2" style="sysSRStyle"   left="160" top="0" width="44" height="44" horzanchor="0" vertanchor="0"/>
+        <button name="sysSet"   visible="true" zorder="2" style="sysSet"        left="120" top="0" width="44" height="44" horzanchor="0" vertanchor="0"/>
+        <button name="sysMin" visible="true" zorder="2" style="sysMin"          left="0"   top="0" width="44" height="44" horzanchor="0" vertanchor="0"/>
+        <button name="sysBack"  visible="true" zorder="2" style="sysBack"       left="40"  top="0" width="44" height="44" horzanchor="0" vertanchor="0"/>
+        <button name="sysClose" visible="true" zorder="2" style="sysClose"      left="80"  top="0" width="44" height="44" horzanchor="0" vertanchor="0"/>
+      </layout>
+      <static name="logo" visible="true" zorder="2" style="logo" left="460" top="15" width="130" height="44"/>
+      <layout name="sysBar" style="sysBar"  visible="true"  zorder="1" left="0" top="0" width="1024" height="30" type="1"/>
+      <layout name="Chapter_background" style="Chapter_background" visiable="true" zorder="1" left="0" top="30" width="1024" height="738" horzanchor="2" vertanchor="2">
+      <listbox name="listbox_Chapter" visible="false" zorder="2" style="listbox_back"  top="180" left="140" right="546"  bottom="228" horzanchor="2" vertanchor="2" itemheight="35"  itemstyle="listbox_item"  bordersize="1" vertscrollbar="scrollbar_playitems1">
+          <scrollbar name="scrollbar_playitems1" visible="true" zorder="3" style="scroll_back_playitems" left="-12" top="1" width="12" bottom="1" vertanchor="2" upstyle="scroll_up_playitems" downstyle="scroll_down_playitems" thumbstyle="scroll_thumb_playitems" vert="true" arrowheight="21" maxpos="100" pos="0" page="20" step="2" />
+        </listbox>
+        <listbox name="listbox_Page" visible="true" zorder="2" style=""  top="220" left="60" right="480" bottom="180" horzanchor="2" vertanchor="2" itemheight="38"  itemwidth="400" itemstyle="listbox_item"  bordersize="0" vertscrollbar="scrollbar_playitems2">
+          <scrollbar name="scrollbar_playitems2" visible="true" zorder="4" style="scroll_back_playitems" left="-10" top="5" width="12" bottom="5" vertanchor="2" upstyle="" downstyle="" thumbstyle="scroll_thumb_playitems" vert="true" arrowheight="0" maxpos="100" pos="0" page="20" step="2" />
+        </listbox>
+         <slider name="donghua_slider"      visible="true" zorder="4" style="progress_bg" left="60" top="585" width="476" height="10" horzanchor="2" maxpos="100" pos="10" thumbwidth="30" thumbheight="30"  thumbstyle="slider_v" forestyle="progress_fore" vert="false"/>
+         <static name="listbox_bg" visible="true" zorder="2" style="listbox_back"  top="185" left="20" width="570" height="443"/>
+         
+      </layout>
+      <layout name="play_back" style="play_back" visible="true" zorder="2" left="580" top="215" width="406" height="443">
+          <static name="softwarename"    visible="true" width="212" height="35" zorder="3" style="softwarename" left="100" top="20"/>
+          <static name="play_control"    visible="true" width="212" height="212" zorder="3" style="play_control" left="95" top="75"/>
+          <checkbox name="play_btn"            visible="true" width="66" height="66" zorder="3" style="button_play"           left="25" top="140"/>
+          <button name="stop_btn"            visible="true" width="66" height="66" zorder="3" style="button_stop"             left="45" top="228"/>
+          <button name="Page_up_btn"     visible="true" width="66"  height="66" zorder="3" style="button_up"   left="120" top="280"/>
+          <button name="Page_down_btn"   visible="true" width="66"  height="66" zorder="3" style="button_down" left="220" top="280"/>
+          <button name="pathset_btn"   visible="true" width="66"  height="66" zorder="3" style="button_pathset" left="295" top="228"/>
+          <checkbox name="displaymode"   visible="true" zorder="3" style="checkbox_displaymode"   left="315" top="140" width="66" height="66" checked="false"/>
+      </layout>
+      <static name="copyrights"    visible="true" width="116" height="13" zorder="2" style="copyrights" left="470" top="740"/>
+    </duwindow>
+  </ducontrol>
+</directui>

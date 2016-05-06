@@ -1,0 +1,8 @@
+﻿<Window x:Class="AstronomyDemonstrator.MediaPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MediaPanel" Height="300" Width="300" Name="mediaPanel" WindowState="Normal" WindowStyle="None" ResizeMode="NoResize" ShowInTaskbar="False" Topmost="False">
+    <Grid Background="Black">
+        <MediaElement Name="mediaPlayer" MediaEnded="mediaPlayer_MediaEnded" MediaFailed="mediaPlayer_MediaFailed" Volume="1"></MediaElement>
+    </Grid>
+</Window>
